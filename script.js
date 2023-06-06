@@ -9,9 +9,9 @@ function volume_sphere() {
   let volume=document.getElementById('volume');
 //   console.log(volume);
 if(ans!=undefined){
-    volume.value=ans;
+    volume.value=ans.toFixed(4);
 }
-
+return false;
 } 
 
 window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
